@@ -1,0 +1,55 @@
+body {
+  background: #8E44AD;
+}
+
+.contrainer {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: #1196EE;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card .header {
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  padding: 10px;
+}
+.card .line::after {
+  content: "";
+  padding: 1px 50% 1px 50%;
+  background: black;
+}
+.card .img-container {
+  width: 10rem;
+  padding: 10px;
+}
+.card .img-container img {
+  width: 100%;
+  transition: 0.9s;
+}
+
+.card:hover {
+  background: lightgreen;
+}
+.card:hover img {
+  transform: rotate(-360deg);
+}
+
+#back {
+  position: absolute;
+  left: 90%;
+  top: 1%;
+  color: lightgreen;
+  font-size: 20px;
+}/*# sourceMappingURL=brainless.css.map */
